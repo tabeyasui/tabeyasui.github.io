@@ -1,18 +1,164 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>Yasu Tabei's Portfolio Site</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      *{
+        margin:0;
+        padding:0;
+      }
+      body {
+        font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+        background:url(bgHawaii.jpg) fixed center top;
+        font-size:14px
+        position:relative;
+      }
+      ul li {
+        list-style:none;
+      }
+      header {
+        background-color:#fff;
+        position:fixed;
+        top:0;
+        width:100%;
+        height:50px;
+      }
+      header nav {
+        height:50px
+      }
+      header h1 {
+        margin:5px 0 0;
+      }
+      header h1 a {
+        color:#666;
+      }
+      header h1 a:hover {
+        color:#000;
+        text-decoration:none;
+      }
+      .container {
+        padding:50px 1% 40px;
+        width:88%;
+        margin:0 auto;
+        background:rgba(255,255,255,0.8);
+      }
+      #imgProfile {
+        border-radius: 100%;
+      }
+      .imgArea {
+        float:left;
+        padding-right:20px
+      }
+      .textArea .big {
+        float:left;
+        font-size:5em;
+        height:70px;
+        font-weight:bold;
+        padding-right:5px;
+        margin-top:-20px;
+      }
+      ul#listPortfolio li {
+        text-align:center;
+      }
+      ul#listPortfolio li img {
+        width:80%;
+      }
+      footer {
+        background-color:#fff;
+        text-align:center;
+        padding:20px 0;
+      }
+      
+      @media (min-width: 768px) {
+      .container {
+        padding:50px 2% 40px;
+        width:86%;
+      }
+      ul#listPortfolio li {
+        width:33%;
+        float:left;
+      }
+      }
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <h1><a class="navber-brand" href="/">Yasu Tabei</a></h1>
+        </div>
+        <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#skill">Skills</a></li>
+              <li><a href="#github">GitHub</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <div class="container">
+      <h2 class="page-header" id="profile">Profile</h2>
+      <div>
+      <p class="imgArea"><img src="brownie.gif" alt="Yasu Tabei" id="imgProfile" /></p>
+      <p class="textArea"><span class="big">A</span>loha! Welbome to my portfolio site. My name is Yasu Tabei. I'm a web designer and a system engineer in Honolulu. I live in Hawaii form 2012. I studied the information technology engineering at Chou University in Tokyo. 
+      I graduated the Master course, and then I was working as a mobile software engineer and a web director for six years in Japan.<br /><br />
+      I came to Hawaii because I wanted to learn about a foreign culture and business. I worked as a system engineer and a vacation renral staff in a real estate company for two years. it was so exicited for me, and I could get a lot of experiences of US business.<br /><br />
+      I'm very instrested in web design, engineering, UI/UX, marketing of business and so on.
+      If you have any question, please let me know. Aloha! Yasu
+      </p>
+      </div>
+      <hr />
+      <h2 class="page-header" id="skill">Skills / Applications</h2>
+      <ul>
+        <li>HTML/CSS (HTML5/CSS3)</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>Wordpress</li>
+        <li>Movabletype</li>
+        <li>EC-CUBE</li>
+        <li>Adobe Illustrator/Photoshop/Dreamweaver/Fireworks/Flash</li>
+        <li>Microsoft Office (Word/Excle/Excel Macro/Powerpoint)</li>
+      </ul>
+      <hr />
+      <h2 class="page-header" id="github">GitHub</h2>
+      <p><a href="https://github.com/tabeyasui/" title="Yasu Tabei's GitHub Page" target="_blank" class="btn btn-info">GitHub</a></p>
+      <h2 class="page-header" id="portfolio">Portfolio</h2>
+      <ul id="listPortfolio">
+        <li>
+          <h3>Message Board</h3>
+          <img src="imgCommingSoon.gif" alt="Comming soon" />
+        </li>
+        <li>
+          <h3>Twitter Clone</h3>
+          <img src="imgCommingSoon.gif" alt="Comming soon" />
+        </li>
+        <li>
+          <h3>Monolist</h3>
+          <img src="imgCommingSoon.gif" alt="Comming soon" />
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <div class="copyright">© 2015 Yasu Tabei</div>
+    </footer>
   </body>
 </html>
